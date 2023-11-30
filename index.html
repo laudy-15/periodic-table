@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="index.css">
+    <script src="scrpt.js" defer></script>
+    <title>Interactive Periodic Table</title>
+    <!---https://github.com/sweaver2112/periodic-table-data/blob/main/pTable.csv-->
+
+    <h1>Periodic Table</h1>
+
+    <div class="pt"> 
+        <p>Click on an element to learn more!</p>
+        <table id="tb1">
+            <tr> <td></td>    <td class="gap" colspan="16"></td> <td></td> </tr>
+            <tr> <td></td> <td></td> <td class="gap" colspan="10"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td></td> <td></td> <td class="gap" colspan="10"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td></td> <td></td> <td class="gap" colspan="1"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td></td> <td></td> <td class="gap" colspan="1"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td class="gap" colspan="18"></td> <!---Gap for the lac & ant rows--> </tr>
+            <tr> <td class="gap" colspan="3"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+            <tr> <td class="gap" colspan="3"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+
+        </table>
+    </div>
+
+    <div class="selec">
+        <h2>Element</h2>
+        <div class="symbol">
+            <p id="chman">1</p>  
+            <p id="chmsym">H</p>  
+            <p id="chmname">Hydrogen</p>
+            <p id="chmamu">1.008</p>
+        </div>
+        <table id="tb2">
+            <tr>
+                <th>Atomic Number</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Mass Number</th>
+                <td>1.008</td>
+            </tr>
+            <tr>
+                <th>State at Room Temperature</th>
+                <td>Gas</td>
+            </tr>
+            <tr>
+                <th>Electronegativity</th>
+                <td>2.20</td>
+            </tr>
+            <tr>
+                <th>Melting Point</th>
+                <td>-259.1</td>
+            </tr>
+            <tr>
+                <th>Boiling Point</th>
+                <td>-252.9</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="text-box">
+        <label for="notes">Write or edit notes from the community about the selected element!</label> <br>
+        <textarea type="text" id="text" name="notes"></textarea>
+        <button type="button" id="post">Post!</button>
+
+    </div>
+
+    <div id="grid-container" class="prop">
+        <p class="item1">Click a button to open an article about that group on the Periodic Table!</p>
+        <button id="b1" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Metal">Metals</a></button>
+        <button id="b2" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Nonmetal">NonMetals</a></button>
+        <button id="b3" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Metalloid">Metalloids</a></button>
+
+        <button id="b4" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Alkali_metal">Alkali Metals</a></button>
+        <button id="b5" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Alkaline_earth_metal">Alkaline Earth Metals</a></button>
+        <button id="b6" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Transition_metal">Transition Metals</a></button>
+        <button id="b7" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Noble_gas">Noble Gases</a></button>
+        <button id="b8" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Lanthanoid">Lanthanoid</a></button>
+        <button id="b9" class="button .button">
+            <a onclick="location=this.href" href="https://en.wikipedia.org/wiki/Actinoid">Actinoid</a></button>
+    </div>

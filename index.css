@@ -1,0 +1,298 @@
+h1 {
+    font-size: 30pt;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: green;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 20pt;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    font-family: arial;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: large;
+    height: 55px;
+}
+
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: large;
+}
+
+tr {
+    height: 3px;
+}
+
+.pt {
+    font-family: monospace;
+    border: 5px solid rgb(72, 11, 72);
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    float: right;
+    text-align: center;
+}
+
+.selec {
+    border: 5px solid rgb(72, 11, 72);
+    margin-left: 20px;
+    margin-bottom: 1px;
+    padding: 12px;
+    float: left;
+    text-align: center;
+}
+
+.symbol {
+    background-image: linear-gradient(to bottom right, lightgreen, green);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#chmsym {
+    margin: auto;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: black;
+    line-height: 80px; /* Center the text vertically */
+}
+
+#chmname {
+    font-size: 32px;
+    text-align: center;
+    color: black;
+    line-height: 0em;
+    margin: 0em;
+}
+
+#chman{
+    font-size: 25px;
+    text-align: left;
+    color: black;
+}
+
+#chmamu{
+    font-size: 20pt;
+    text-align: center;
+    color: black;
+    line-height: 0em;
+}
+
+#text-box {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(72, 11, 72);
+    margin-left: 20px;
+    margin-bottom: 1px;
+    padding: 5px;
+    width: 260px;
+    float: left;
+}
+
+#text {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.prop {
+    font-family: monospace;
+    border: 5px solid rgb(72, 11, 72);
+    margin-bottom: 30px;
+    margin-right: 20px;
+    width: 850px;
+    height: 200px;
+    float: right;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    column-gap: 10px
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#tb1 {
+    margin: auto;
+    height: 400px;
+    width: 800px;
+    table-layout:fixed;
+}
+
+.tb1div {
+    height: 55px;
+    line-height: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.tb1div:hover {
+    cursor: pointer;
+}
+
+#tbchmsym {
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    line-height: 10px;
+}
+
+#tbchmname {
+    font-size: 7px;
+    text-align: center;
+    color: black;
+    line-height: 20px;
+    margin: 0em;
+}
+
+#tbchman{
+    font-size: 10px;
+    text-align: left;
+    color: black;
+}
+
+#tbchmamu{
+    font-size: 6pt;
+    text-align: center;
+    color: black;
+    margin: 0em;
+}
+
+#tb2 {
+    height: 400px;
+    width: 250px;
+}
+
+.gap {
+    border: none !important;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: large;
+}
+
+.active-td {
+    border: 1px solid red;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: large;
+    height: 55px;
+}
+
+.button {
+    font-family: arial;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#b1 {
+    background-color: silver;
+}
+#b1:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+#b2 {
+    background-color: rgb(252, 92, 252);
+}
+#b2:hover {
+    background-color: rgb(203, 75, 203);
+}
+
+#b3 {
+    background-color: #CC5500;
+}
+#b3:hover {
+    background-color: #b94f04;
+}
+
+#b4 {
+    background-color: rgb(192, 119, 192);
+}
+#b4:hover {
+    background-color: rgb(153, 96, 153);
+}
+
+#b5 {
+    background-color: #3e8e41;
+}
+#b5:hover {
+    background-color: #307032;
+}
+
+#b6 {
+    background-color: red;
+}
+#b6:hover {
+    background-color: rgb(182, 6, 6);
+}
+
+#b7 {
+    background-color: purple;
+}
+#b7:hover {
+    background-color: rgb(102, 1, 102);
+}
+
+#b8 {
+    background-color: rgb(240, 240, 146);
+    color: black;
+}
+#b8:hover {
+    background-color: rgb(191, 191, 120);
+}
+
+#b9 {
+    background-color: rgb(88, 88, 239);
+}
+#b9:hover {
+    background-color: rgb(70, 70, 187);
+}
